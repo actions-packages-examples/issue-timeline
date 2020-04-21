@@ -14,6 +14,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        curl -v -H "Authorization: token $GITHUB_TOKEN" \
-          -H "Accept: application/vnd.github.mockingbird-preview" \
-          "https://api.github.com/repos/actions-packages-examples/issue-timeline/issues/1/timeline" | jq
+        curl -v -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.mockingbird-preview" "https://api.github.com/repos/actions-packages-examples/issue-timeline/issues/1/timeline"
